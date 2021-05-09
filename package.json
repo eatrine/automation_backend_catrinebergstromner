@@ -1,0 +1,24 @@
+{
+  "name": "backend-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "cypress:run": "cypress run --reporter mochawesome", 
+    "test:merge":"mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json",
+    "test:merge:report":"marge cypress/report/output.json --reportDir cypress/report/ --inline"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.7.0"
+  },
+  "dependencies": {
+    "faker": "^4.1.0",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0"
+  }
+}

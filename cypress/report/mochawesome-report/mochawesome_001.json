@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-09T12:42:17.385Z",
+    "end": "2021-05-09T12:42:23.876Z",
+    "duration": 6491,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5199f37b-3425-47e7-bbb5-2901b1c47cc1",
+      "title": "",
+      "fullFile": "cypress/integration/backend-rooms.spec.js",
+      "file": "cypress/integration/backend-rooms.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "66b515dc-19c5-471e-b480-fbe9f19c9ff6",
+          "title": "Test Suite Rooms",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create a new room",
+              "fullTitle": "Test Suite Rooms Create a new room",
+              "timedOut": null,
+              "duration": 1697,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "roomHelpers.createRoomRequest(cy);",
+              "err": {},
+              "uuid": "3c73a3a8-7a19-4ea9-92e0-f616f3d7d2ed",
+              "parentUUID": "66b515dc-19c5-471e-b480-fbe9f19c9ff6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create and delete a room",
+              "fullTitle": "Test Suite Rooms Create and delete a room",
+              "timedOut": null,
+              "duration": 2797,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "roomHelpers.createAndDeleteRequestOfRoom(cy);",
+              "err": {},
+              "uuid": "8de02caf-5398-4b1e-91cb-655945462724",
+              "parentUUID": "66b515dc-19c5-471e-b480-fbe9f19c9ff6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create and edit a room",
+              "fullTitle": "Test Suite Rooms Create and edit a room",
+              "timedOut": null,
+              "duration": 1789,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "roomHelpers.createRoomRequestAndEdit(cy);",
+              "err": {},
+              "uuid": "04a768fc-c217-4703-81e4-cced81b50464",
+              "parentUUID": "66b515dc-19c5-471e-b480-fbe9f19c9ff6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3c73a3a8-7a19-4ea9-92e0-f616f3d7d2ed",
+            "8de02caf-5398-4b1e-91cb-655945462724",
+            "04a768fc-c217-4703-81e4-cced81b50464"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6283,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "5.2.0"
+    }
+  }
+}
