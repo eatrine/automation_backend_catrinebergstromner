@@ -113,7 +113,17 @@ function createRoomRequestAndEdit(cy){
             'X-User-Auth': JSON.stringify(Cypress.env().loginToken),
             'Content-Type': 'application/json'
         },
-        body:payloadEdit
+        body:{
+            "features":["ensuite"],
+            "category":"double",
+            "number":"601",
+            "floor":"3",
+            "available":true,
+            "price":"2500",
+            "id":lastChild
+           
+        }
+
     }).then((response =>{   
         const responseAsString = JSON.stringify(response)
         expect(responseAsString).to.have.string(payloadEdit.number) 

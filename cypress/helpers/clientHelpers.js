@@ -91,7 +91,7 @@ function createClientRequestAndEdit(cy){
     cy.authenticateSession().then((response =>{
         let fakeClientPayload = createRandomClientPayload() 
         const payloadEdit = {
-            "name":"NotAName"
+           "name":"NotAName"
         }
     
     // post request to create a client
@@ -128,6 +128,7 @@ function createClientRequestAndEdit(cy){
             'Content-Type': 'application/json'
         },
         body:payloadEdit
+    
     }).then((response =>{   
         
         const responseAsString = JSON.stringify(response)
